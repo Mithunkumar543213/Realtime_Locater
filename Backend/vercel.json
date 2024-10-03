@@ -1,10 +1,17 @@
 {
-    "builds": [
-      { "src": "package.json", "use": "@vercel/static-build" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/" }
-    ]
-    
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.jason",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      // Specify which paths will route to a destination using a regex
+      "src": "/(.*)",
+      // Specify the paths' destination
+      "dest": "server.jason"
+    }
+  ]
 }
-  
