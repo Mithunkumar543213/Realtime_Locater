@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "This is the real time location tracker",
   "main": "server.js",
+  
+"scripts": {
+"build": "[my-framework] build --output public"
+},
+
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
