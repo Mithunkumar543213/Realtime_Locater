@@ -1,17 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.json",
-      "use": "@now/node"
-    }
-  ],
-  "routes": [
-    {
 
-      "src": "/(.*)",
-    
-      "dest": "server.json"
-    }
-  ]
-}
